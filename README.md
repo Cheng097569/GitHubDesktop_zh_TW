@@ -1,6 +1,5 @@
-# GitHubDesktop_zh_TW
-GitHubDesktop 繁體中文
-龜速更新中
+# GitHubDesktop zh_TW
+GitHubDesktop 繁體中文語系檔案，目前龜速更新中
 # 目前翻譯
 羅列目前翻譯完成以及未完成內容
 - [ ] 分支
