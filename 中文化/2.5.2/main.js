@@ -558,9 +558,9 @@ module.exports = function(e) {
             U = { label: B, click() { const e = m.getLogDirectoryPath();
                     g.ensureDir(e).then(() => { f.openDirectorySafe(e) }).catch((e) => { log.error('Failed opening logs directory', e) }) } }; return !1, F.push({ label: '說明', submenu: [...[I, D, z, j, U], T, { label: '關於 GitHub Desktop', click: a('show-about'), id: 'about' }] }), p.ensureItemIds(F), c.Menu.buildFromTemplate(F) }
 
-    function o(e, n) { return e ? n ? 'Force P&ush\u2026' : 'Force P&ush' : 'P&ush' }
+    function o(e, n) { return e ? n ? '強制推送\u2026' : '強制推送' : '推送' }
 
-    function i(e) { return e ? 'H&ide stashed changes' : 'Sho&w stashed changes' }
+    function i(e) { return e ? '隱藏收藏的更改' : '先是收藏的更改' }
 
     function a(e) { return (n, t) => { t ? t.webContents.send('menu-event', { name: e }) : c.ipcMain.emit('menu-event', { name: e }) } }
 
@@ -581,12 +581,12 @@ module.exports = function(e) {
         f = t(23),
         h = t(62),
         y = t(61),
-        _ = 'Open in Command Prompt',
-        b = 'Create &pull request',
-        S = 'Show &pull request',
-        w = 'default branch',
-        v = '&Remove\u2026',
-        x = '&Remove'; var E;
+        _ = '在命令字元下開啟',
+        b = '新增拉取請求',
+        S = '顯示拉取請求',
+        w = '默認分支',
+        v = '刪除\u2026',
+        x = '刪除'; var E;
     (function(e) { e[e.Reset = 0] = 'Reset', e[e.In = 1] = 'In', e[e.Out = 2] = 'Out' })(E || (E = {})), n.buildDefaultMenu = r; const C = [1, 1.1, 1.25, 1.5, 1.75, 2],
         k = C.slice().reverse() }, function(e, n, t) { 'use strict'; const r = t(0),
         o = t(4),
